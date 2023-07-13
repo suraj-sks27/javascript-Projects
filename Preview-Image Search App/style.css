@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#search-input {
+  width: 60%;
+  max-width: 400px;
+
+  padding: 10px 20px;
+
+  border: none;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  font-size: 18px;
+  color: #333;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  font-size: 18px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#search-button:hover {
+  background-color: #3e8e41;
+}
+
+.search-result {
+  max-width: 1200px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-card {
+  margin-bottom: 60px;
+  width: 30%;
+
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.search-card img {
+  width: 100%;
+  height: 300px;
+
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.search-card:hover img {
+  transform: scale(1.07);
+}
+
+.search-card a {
+  text-align: center;
+  padding: 10px;
+  display: block;
+
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.search-card a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#show-more-button {
+  background-color: #008cba;
+  color: #fff;
+
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+
+  display: block;
+
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+#show-more-button:hover {
+  background-color: #0077b5;
+}
+
+@media screen and (max-width: 768px) {
+  .search-card {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .search-card {
+    width: 100%;
+  }
+
+  form {
+    flex-direction: column;
+  }
+  #search-input {
+    width: 85%;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  #search-button {
+    width: 30%;
+    font-size: 16px;
+  }
+}

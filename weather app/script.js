@@ -52,7 +52,7 @@ const getWeatherData = async (cityVal) => {
 
     weatherDataEl.querySelector(".details").innerHTML = details
       .map((detail) => `<div>${detail}</div>`)
-      .join("");
+      .join(""); //to remove comma
   } catch (error) {
     console.log("error");
     weatherDataEl.querySelector(".icon").innerHTML = "";
