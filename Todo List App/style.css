@@ -67,6 +67,10 @@ button {
 
   font-size: 16px;
   border-radius: 40px;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #ff1900;
 }
 
 ul li {
