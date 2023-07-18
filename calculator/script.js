@@ -19,7 +19,7 @@ const clearResults = () => {
   inputFieldEl.value = "";
 };
 const calculateResults = () => {
-  ja;
+  // ja;
   inputFieldEl.value = eval(inputFieldEl.value);
 };
 const appendValue = (buttonValue) => {
